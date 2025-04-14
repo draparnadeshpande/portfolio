@@ -76,12 +76,12 @@ function HighlightSelectedButton(button) {
 
     for (var i = 0, max = buttons.length; i < max; i++){
         buttons[i].style.background= "#fff";
-        buttons[i].style.color="#96979c";
-        buttons[i].style.borderColor="#96979c";
+        buttons[i].style.color="#000000";
+        buttons[i].style.borderColor="#000000";
         buttons[i].style.textDecoration="none";
     }
     var HButton = document.getElementById(button);
-    HButton.style.background= "#96979c";
+    HButton.style.background= "#e0dede";
     HButton.style.borderColor="orange";
     HButton.style.color="#000";
     HButton.style.textDecoration="overline";
