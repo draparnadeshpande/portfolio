@@ -1,6 +1,6 @@
 body, button {
     background: #fff;
-    color: #000;
+    color: #000000;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -193,4 +193,13 @@ li{
 
 #footer-author{
     font-size:15px;
+}
+
+ol>li {
+    font-style: normal;
+}
+
+ol>li>b {
+    font-style: italic;
+    text-decoration:underline;
 }
