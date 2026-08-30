@@ -20,6 +20,14 @@
 <script setup>
 const publications = [
   {
+    title: "Unveiling the Correlation between Defects and High Mobility in MoS2 Monolayers",
+    description: "Sudipta Majumder, Sarika Lohkna, Vaibhav Walve, Rahul Chand, Gokul M. Anilkumar, Sooyeon Hwang, G. V. Pavan Kumar, Aparna Deshpande, Prasenjit Ghosh, Atikur Rahman ACS Appl. Mater. Interfaces 19 February 2025; 17 (7): 10942–10953"
+  },
+  {
+    title: "Universal thickness-dependent absorption in solids at the nanoscale: Anomalous enhancement in the ultrathin limit",
+    description: "Bhumika Chauhan, Nikhil Singh, Subhrajit Dalai, Abhisek Saidarsan, Sayantan Patra, Sourabh Jain, Aparna Deshpande, and Ashish Arora Phys. Rev. B 114, L111404 – Published 3 August, 2026"
+  },
+  {
     title: "Oxidation Behavior of ZrTe2: Insights into Stability for Applications in Sensors",
     description: "Pranjal Panwar, Vaibhav Walve, Nikhil Singh, Luminita Harnagea, Aparna Deshpande, J. Phys. Chem. C, 129, 22, 10304–10312 (2025)"
   },

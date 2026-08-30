@@ -9,7 +9,6 @@
     <br/><br/>
     SAC has a dedicated <a href="https://www.youtube.com/@IISERPuneScienceActivityCentre/featured" target="_blank" rel="noopener" class="hover:shadow-lg transition text-blue-600 hover:underline">YouTube channel</a> which extends our outreach beyond campus! Recently the channel crossed 100,000 subscribers and received the <a href="https://x.com/ScienceActivity" target="_blank" rel="noopener" class="hover:shadow-lg transition text-blue-600 hover:underline">Silver Button</a>!  
     <br/><br/>
-    Currently, I am the Faculty Incharge of SAC, a role that aligns with my passion for teaching and outreach, and gives me immense satisfaction.
   </div>
   <div class="text-center text-bold text-2xl mt-15">My Talks</div>
   <div class="w-25 h-0.5 bg-[#111828] mx-auto rounded"></div>

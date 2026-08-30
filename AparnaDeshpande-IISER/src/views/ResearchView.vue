@@ -33,6 +33,14 @@ const topics = [
   {
     title: "2D Van der Waals magnetic materials",
     description: "The isolation of a monolayer of magnetic material has opened an exciting subfield to probe stable magnetism in 2D. Understanding bulk magnetic materials also can have long standing implications in the world of spintronics."
+  },
+  {
+    title: "Spin-polarised STM measurements",
+    description: ""
+  },
+  {
+    title: "Instrumentation :- setting up probe station",
+    description: ""
   }
 ];
 

@@ -16,6 +16,10 @@
 
       <ul class="space-y-4 gap-2 sm:h-full h-50 overflow-y-scroll sm:overflow-y-hidden">
         <li class="bg-blue-50 rounded-lg shadow p-3">
+          Vacancies for 2 PhD and 2 iPhD Students.<br/>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7452325477958021120/" class="transition text-blue-600 hover:underline">Enquire Here !</a>
+        </li>
+        <li class="bg-blue-50 rounded-lg shadow p-3">
           Congratulations to Vaibhav Walve for defending his PhD thesis successfully! 
         </li>
         <li class="bg-blue-50 rounded-lg shadow p-3">
