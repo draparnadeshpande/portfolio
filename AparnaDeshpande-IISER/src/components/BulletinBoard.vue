@@ -17,7 +17,7 @@
           <a href="https://www.linkedin.com/feed/update/urn:li:activity:7452325477958021120/" class="transition hover:underline">Enquire Here !</a>
         </li>
         <li class="rounded-lg border-l-4 border-accent bg-accent-soft p-3 text-ink">
-          Congratulations to Vaibhav Walve for defending his PhD thesis successfully!
+          Congratulations to Vaibhav Walve for defending his PhD thesis successfully! 
         </li>
         <li class="rounded-lg border-l-4 border-accent bg-accent-soft p-3 text-ink">
           Congratulations to Vaibhav for receiving the prestigious <a href="https://anrfonline.in/ANRF/npdf" target="_blank" rel="noopener" class="transition hover:underline">ANRF postdoctoral fellowship</a>.<br/> Vaibhav will carry out his postdoctoral research work at NCL
