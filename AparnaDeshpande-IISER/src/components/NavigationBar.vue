@@ -1,86 +1,77 @@
 <template>
-  <nav class="bg-white">
-    <div class="px-2 sm:px-3 lg:px-5 sm:bg-[#111828]">
-      <div class="flex justify-center h-16">
-        <!-- Hamburger menu button (mobile) -->
-        <div class="flex items-center sm:hidden absolute left-4 top-4 border border-3">
-          <button
-            @click="isOpen = !isOpen"
-            type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-100"
-            aria-controls="mobile-menu"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              v-if="!isOpen"
-              class="block h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              style="color: #111828"
-            >
-              <path d="M4 8h16M4 16h16" />
-            </svg>
-            <svg
-              v-else
-              class="block h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              style="color: #111828"
-            >
-              <path d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
+  <header class="sticky top-0 z-50 border-b border-line bg-surface/80 backdrop-blur">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
+      <router-link to="/" class="font-serif text-lg font-semibold text-ink">
+        Dr. &nbsp; Aparna Deshpande
+      </router-link>
 
-        <!-- Nav Links (desktop) -->
-        <div class="hidden sm:flex sm:space-x-6 items-center text-white">
-          <router-link
-            v-for="item in navItems"
-            :key="item.to"
-            :to="item.to"
-            :class="[
-              'px-3 py-2 rounded-md text-l font-medium text-gray-300 hover:text-blue-400',
-              $route.path === item.to
-                ? 'bg-gray-700'
-                : ''
-            ]"
-          >
-            {{ item.label }}
-          </router-link>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile menu -->
-    <div v-if="isOpen" class="sm:hidden" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-800">
+      <!-- Nav Links (desktop) -->
+      <nav class="hidden items-center gap-1 sm:flex">
         <router-link
           v-for="item in navItems"
           :key="item.to"
           :to="item.to"
-          :class="[
-            'block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-200',
-          ]"
-          @click="isOpen = false"
+          class="rounded-md px-3 py-2 text-sm font-medium text-ink-muted transition hover:text-accent"
+          :class="$route.path === item.to ? 'text-accent' : ''"
         >
           {{ item.label }}
         </router-link>
-      </div>
+      </nav>
+
+      <!-- Hamburger menu button (mobile) -->
+      <button
+        @click="isOpen = !isOpen"
+        type="button"
+        class="inline-flex items-center justify-center rounded-md p-2 text-ink sm:hidden"
+        aria-controls="mobile-menu"
+        :aria-expanded="isOpen"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          v-if="!isOpen"
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M4 8h16M4 16h16" />
+        </svg>
+        <svg
+          v-else
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
-  </nav>
+
+    <!-- Mobile menu -->
+    <nav v-if="isOpen" id="mobile-menu" class="space-y-1 border-t border-line px-4 pb-4 pt-2 sm:hidden">
+      <router-link
+        v-for="item in navItems"
+        :key="item.to"
+        :to="item.to"
+        class="block rounded-md px-3 py-2 text-base font-medium text-ink-muted hover:text-accent"
+        :class="$route.path === item.to ? 'text-accent' : ''"
+        @click="isOpen = false"
+      >
+        {{ item.label }}
+      </router-link>
+    </nav>
+  </header>
 </template>
 
 <script setup>

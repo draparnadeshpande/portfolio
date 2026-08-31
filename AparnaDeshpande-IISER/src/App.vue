@@ -1,14 +1,13 @@
 <script setup>
-import HomePage from './components/BulletinBoard.vue';
 import NavigationBar from './components/NavigationBar.vue';
-
 </script>
 
 <template>
-  <!-- // bg-[#111828] -->
-  <div class="max-w-7xl mx-auto">
+  <div class="min-h-screen bg-bg font-sans text-ink">
     <NavigationBar></NavigationBar>
-    <RouterView></RouterView>
+    <main class="mx-auto max-w-7xl px-4 sm:px-6">
+      <RouterView></RouterView>
+    </main>
   </div>
 </template>
 
