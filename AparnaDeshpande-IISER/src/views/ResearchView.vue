@@ -1,22 +1,21 @@
 <template>
   <div class="min-h-screen p-4">
-    <div class="container mx-auto pt-12 pb-20">
-        <h1 class="text-4xl font-bold text-gray-800 text-center mb-8">
-            Current Research Topics
-        </h1>
-        <div class="w-30 h-0.5 bg-[#111828] mx-auto rounded mt-5 mb-5"></div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-            <div v-for="(tile, idx) in topics" :key="idx" class="rounded-lg shadow-lg p-8 border border-2 border-gray-100">
-                <h2 class="text-xl font-bold text-gray-800 mb-4 text-center">{{tile.title}}</h2>
-                <div class="mx-auto w-24 h-[3px] brounded-full mb-6 transition-all duration-500 group-hover:w-36"></div>
-                <p class="text-gray-700 text-sm"> {{tile.description}} </p>
+    <div class="container mx-auto pb-20 pt-12">
+        <PageHeader title="Current Research Topics"></PageHeader>
+        <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div v-for="(tile, idx) in topics" :key="idx" class="card group">
+                <h2 class="mb-4 text-center font-serif text-xl font-semibold text-ink">{{tile.title}}</h2>
+                <div class="mx-auto mb-6 h-[3px] w-24 rounded-full bg-accent transition-all duration-500 group-hover:w-36"></div>
+                <p class="text-sm text-ink-muted"> {{tile.description}} </p>
             </div>
         </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script setup>
+import PageHeader from '@/components/PageHeader.vue';
+
 const topics = [
   {
     title: "Borophene",
@@ -43,5 +42,4 @@ const topics = [
     description: ""
   }
 ];
-
-</script> 
+</script>
