@@ -1,15 +1,12 @@
 <template>
   <div class="min-h-screen p-2">
-    <div class="container mx-auto pt-12 pb-20">
-        <h1 class="text-4xl font-bold text-gray-800 text-center mb-8">
-            Key Publications
-        </h1>
-        <div class="w-30 h-0.5 bg-[#111828] mx-auto rounded mt-5 mb-5"></div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
-            <div v-for="(tile, idx) in publications" :key="idx" class="rounded-lg shadow-lg p-8 border border-2 border-gray-100">
-                <h2 class="text-l font-bold text-gray-800 mb-4 text-center">{{tile.title}}</h2>
-                <div class="mx-auto w-24 h-[3px] brounded-full mb-6 transition-all duration-500 group-hover:w-36"></div>
-                <p class="text-gray-700 text-xs"> {{tile.description}} </p>
+    <div class="container mx-auto pb-20 pt-12">
+        <PageHeader title="Key Publications"></PageHeader>
+        <div class="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
+            <div v-for="(tile, idx) in publications" :key="idx" class="card group">
+                <h2 class="mb-4 text-center font-serif text-base font-semibold text-ink">{{tile.title}}</h2>
+                <div class="mx-auto mb-6 h-[3px] w-24 rounded-full bg-accent transition-all duration-500 group-hover:w-36"></div>
+                <p class="text-xs text-ink-muted"> {{tile.description}} </p>
             </div>
         </div>
     </div>
@@ -18,6 +15,8 @@
 
 
 <script setup>
+import PageHeader from '@/components/PageHeader.vue';
+
 const publications = [
   {
     title: "Unveiling the Correlation between Defects and High Mobility in MoS2 Monolayers",
@@ -104,5 +103,4 @@ const publications = [
     description: "Violeta Iancu, Aparna Deshpande and Saw-Wai Hla, Phys. Rev. Lett., 97, 266603 (2006)."
   }
 ];
-
 </script>
