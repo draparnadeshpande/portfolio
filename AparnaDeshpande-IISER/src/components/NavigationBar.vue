@@ -1,8 +1,8 @@
 <template>
   <header class="sticky top-0 z-50 border-b border-line bg-surface/80 backdrop-blur">
     <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
-      <router-link to="/" class="font-serif text-lg font-semibold text-ink">
-        Dr. &nbsp; Aparna Deshpande
+      <router-link to="/" class="flex items-center">
+        <img src="@/assets/icons/logo_iiser_pune.jpg" alt="IISER Pune" class="h-15 w-20"/>
       </router-link>
 
       <!-- Nav Links (desktop) -->

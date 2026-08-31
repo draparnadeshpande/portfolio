@@ -11,20 +11,31 @@
         </h3>
       </div>
 
-      <ul class="h-50 gap-2 space-y-4 overflow-y-scroll sm:h-full sm:overflow-y-hidden">
-        <li class="rounded-lg border-l-4 border-accent bg-accent-soft p-3 text-ink">
-          Vacancies for 2 PhD and 2 iPhD Students.<br/>
-          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7452325477958021120/" class="transition hover:underline">Enquire Here !</a>
+      <ul class="h-50 divide-y divide-line overflow-y-scroll sm:h-full sm:overflow-y-hidden">
+        <li class="flex gap-2 py-3 text-ink">
+          <span class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 bg-accent"></span>
+          <span>
+            Welcome to 3 iPhD students - Ritika, Pratyush, Priyash!
+          </span>
         </li>
-        <li class="rounded-lg border-l-4 border-accent bg-accent-soft p-3 text-ink">
-          Congratulations to Vaibhav Walve for defending his PhD thesis successfully! 
+        <li class="flex gap-2 py-3 text-ink">
+          <span class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 bg-accent"></span>
+          <span>
+            Congratulations to Vaibhav Walve for defending his PhD thesis successfully!
+          </span>
         </li>
-        <li class="rounded-lg border-l-4 border-accent bg-accent-soft p-3 text-ink">
-          Congratulations to Vaibhav for receiving the prestigious <a href="https://anrfonline.in/ANRF/npdf" target="_blank" rel="noopener" class="transition hover:underline">ANRF postdoctoral fellowship</a>.<br/> Vaibhav will carry out his postdoctoral research work at NCL
-          under the mentorship of Dr. Kirandeep Singh at <a href="http://academic.ncl.res.in/kp.singh" target="_blank" rel="noopener" class="transition hover:underline">NCL (Pune)</a>.
+        <li class="flex gap-2 py-3 text-ink">
+          <span class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 bg-accent"></span>
+          <span>
+            Congratulations to Vaibhav for receiving the prestigious <a href="https://anrfonline.in/ANRF/npdf" target="_blank" rel="noopener" class="transition hover:underline">ANRF postdoctoral fellowship</a>.<br/> Vaibhav will carry out his postdoctoral research work at NCL
+            under the mentorship of Dr. Kirandeep Singh at <a href="http://academic.ncl.res.in/kp.singh" target="_blank" rel="noopener" class="transition hover:underline">NCL (Pune)</a>.
+          </span>
         </li>
-        <li class="rounded-lg border-l-4 border-accent bg-accent-soft p-3 text-ink">
-          Conversation in <a href="https://www.youtube.com/watch?v=1hkg2OmUc2A&t=14s" target="_blank" rel="noopener" class="transition hover:underline">Dr. Pavan's podcast Pratidhvani Humanizing Science</a>
+        <li class="flex gap-2 py-3 text-ink">
+          <span class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 bg-accent"></span>
+          <span>
+            Conversation in <a href="https://www.youtube.com/watch?v=1hkg2OmUc2A&t=14s" target="_blank" rel="noopener" class="transition hover:underline">Dr. Pavan's podcast Pratidhvani Humanizing Science</a>
+          </span>
         </li>
       </ul>
     </div>
