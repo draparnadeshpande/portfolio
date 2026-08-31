@@ -5,9 +5,9 @@
       Article 51A(h) in the constitution of India  lists "To develop the scientific temper, humanism, and the spirit of inquiry and reform"as one of the fundamental duties.
       In line with this IISER Pune has a dedicated International Relations and Outreach (IRO) department. Smt. Indrani Balan Science Activity Centre (SAC) is a part of IRO.
       Situated in the IISER Pune campus SAC is actively engaged in science outreach and teacher training workshops. Outside the campus SAC has also set up a community tinkering centre called "
-      <a href="https://www.kalpakghar.org/" target="_blank" rel="noopener">Kalpakghar</a>" in the <a href="https://www.pcsciencepark.org/" target="_blank" rel="noopener">Pimpri Chinchwad Science Park</a>, in collaboration with the CSR initiative of Tata Technologies.
+      <a href="https://www.kalpakghar.org/" target="_blank" rel="noopener">Kalpakghar</a>" in the <a href="https://www.pcsciencepark.org/" target="_blank" rel="noopener">Pimpri Chinchwad Science Park</a>, in collaboration with the CSR initiative of Tata Technologies. 
       <br/><br/>
-      SAC has a dedicated <a href="https://www.youtube.com/@IISERPuneScienceActivityCentre/featured" target="_blank" rel="noopener">YouTube channel</a> which extends our outreach beyond campus! Recently the channel crossed 100,000 subscribers and received the <a href="https://x.com/ScienceActivity" target="_blank" rel="noopener">Silver Button</a>!
+      SAC has a dedicated <a href="https://www.youtube.com/@IISERPuneScienceActivityCentre/featured" target="_blank" rel="noopener">YouTube channel</a> which extends our outreach beyond campus! Recently the channel crossed 100,000 subscribers and received the <a href="https://x.com/ScienceActivity" target="_blank" rel="noopener">Silver Button</a>!  
       <br/><br/>
     </div>
     <h2 class="mt-15 text-center font-serif text-2xl font-semibold text-ink">My Talks</h2>
