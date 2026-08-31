@@ -1,21 +1,70 @@
 /* base.css */
 
-/* Import Tailwind's layers: base, components, utilities */
 @import "tailwindcss";
 
-/* You can add your custom base styles below */
+@theme {
+  --color-bg: #fbfaf8;
+  --color-surface: #ffffff;
+  --color-ink: #1f2937;
+  --color-ink-muted: #6b7280;
+  --color-accent: #0f766e;
+  --color-accent-soft: #f0fdfa;
+  --color-line: #e5e7eb;
 
-/* Custom scrollbar styling for modern look */
+  --font-serif: "Fraunces Variable", Georgia, serif;
+  --font-sans: "Inter Variable", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #14171a;
+    --color-surface: #1c2024;
+    --color-ink: #e5e7eb;
+    --color-ink-muted: #9ca3af;
+    --color-accent: #2dd4bf;
+    --color-accent-soft: rgba(45, 212, 191, 0.12);
+    --color-line: #2d333b;
+  }
+}
+
+@layer base {
+  a {
+    color: var(--color-accent);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-sans text-xs font-semibold uppercase tracking-widest text-accent;
+  }
+
+  .section-rule {
+    @apply mx-auto mt-3 h-0.5 w-16 rounded-full bg-accent;
+  }
+
+  .card {
+    @apply rounded-xl border border-line bg-surface p-6 transition hover:border-accent/50 hover:shadow-sm;
+  }
+}
+
+/* Custom scrollbar styling, themed via the tokens above */
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: #f3f4f6;
+  background-color: var(--color-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #cbd5e1;
+  background-color: var(--color-line);
   border-radius: 6px;
 }
 
-/* Smooth transitions for theme toggles and UI feedback */
+/* Smooth transition when the OS color-scheme flips */
 body, [class*="bg-"], [class*="text-"] {
   transition: background-color 0.2s, color 0.2s;
 }

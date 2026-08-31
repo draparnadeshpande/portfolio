@@ -1,5 +1,4 @@
 <script setup>
-import HomePage from './components/BulletinBoard.vue';
 import NavigationBar from './components/NavigationBar.vue';
 
 </script>
