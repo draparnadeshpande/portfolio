@@ -35,5 +35,19 @@
 </template>
 
 <script setup>
+  const bulletins = [
+    {
+      id: 1,
+      title: "Our first paper on borophene in JPCC",
+      link: "https://pubs.acs.org/doi/10.1021/acs.jpcc.4c00497"
+    },
+    {
+      id: 2,
+      title: "Our first paper on borophene in JPCC",
+      link: "https://pubs.acs.org/doi/10.1021/acs.jpcc.4c00497"
+    },
+
+  ];
+
 
 </script>
