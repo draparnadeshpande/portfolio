@@ -30,10 +30,22 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="mb-5">
         <p class="subheading mb-3">PhD Students</p>
         <div class="grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2 md:grid-cols-3">
           <div v-for="person in currentPhd" :key="person.name" class="member-row">
+            <span class="avatar">{{ initials(person.name) }}</span>
+            <span>
+              <span class="block text-sm font-medium text-ink">{{ person.name }}</span>
+              <span class="block text-xs text-ink-muted">{{ person.period }}</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="subheading mb-3">iPhD Students</p>
+        <div class="grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2 md:grid-cols-3">
+          <div v-for="person in currentIphd" :key="person.name" class="member-row">
             <span class="avatar">{{ initials(person.name) }}</span>
             <span>
               <span class="block text-sm font-medium text-ink">{{ person.name }}</span>
@@ -101,6 +113,12 @@ const currentBsms = [
 
 const currentPhd = [
   { name: 'Nikhil Singh', period: 'Jul 2023 - Present' },
+];
+
+const currentIphd = [
+  { name: 'Ritika', period: 'Aug 2026 - Present' },
+  { name: 'Pratyush', period: 'Aug 2026 - Present' },
+  { name: 'Priyash', period: 'Aug 2026 - Present' },
 ];
 
 const alumniBsms = [
