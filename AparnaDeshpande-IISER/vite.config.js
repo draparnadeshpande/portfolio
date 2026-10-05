@@ -18,7 +18,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: '/',
+  base: '/portfolio/',
 
   build: {
     outDir: 'build' // Or any folder name you prefer
